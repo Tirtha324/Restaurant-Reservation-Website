@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-flex-row">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item" id="spec">
+            <a href="speciality.html">Speciality</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    <div>
+    <header>
+        <h1>
+            Reservation
+        </h1>
+    </header>
+
+    <br>
+
+
+
+    <form action="test.php" method="post">
+        <h2>Name</h2>
+        <input type="text" placeholder="Enter Your Name" required name="name">
+        <h2>Email ID</h2>
+        <input type="text" placeholder="Enter Your Email ID" required name="email">
+        <H2>Mobile no.</H2>
+        <input type="number" placeholder="Enter yout Mobile no." required name="mobile">
+        <h2>No. of seats</h2>
+        <select required name="seats">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+
+        
+
+        <h2>Date</h2>
+        <input type="date" name="Date" id="date" name="date">
+           
+        <h2>Time Slot</h2>
+        <!-- <select name="Time">
+            <option value="10:00 am">10:00 am</option>
+            <option value="11:00 am">12:00 am</option>
+            <option value="12:00 pm">12:00 pm</option>
+            <option value="1:00 pm">1:00 pm</option>
+            <option value="2:00 pm">2:00 pm</option>
+            <option value="3:00 pm">3:00 pm</option>
+            <option value="4:00 pm">4:00 pm</option>
+            <option value="7:00 pm">7:00 pm</option>
+            <option value="8:00 pm">8:00 pm</option>
+            <option value="9:00 pm">9:00 pm</option>
+            <option value="10:00 pm">10:00 pm</option>
+            <option value="11:00 pm">11:00 pm</option>
+        </select> -->
+
+        <input type="time" name="time" id="time" min="10:00" max="22:00">
+
+        <!-- <script>
+          var date = new Date();
+          var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+          document.getElementById("time").setAttribute("min", current_time);
+        </script> -->
+        
+
+          <br><br><br><br>
+          <!-- <a href="booked.html" name="book"><button>Book Table</button> </a> -->
+          <input id="button" type="submit" value="Book Table" name="book">
+
+
+          </form>
+
+          <script>
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; 
+            var yyyy = today.getFullYear();
+            if(dd<10){
+              dd='0'+dd
+            } 
+            if(mm<10){
+              mm='0'+mm
+            } 
+
+            today = yyyy+'-'+mm+'-'+dd;
+            document.getElementById("date").setAttribute("min", today);
+
+          </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserved</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+        *{
+            text-align: center;
+            font-family: 'Big Shoulders Text', cursive;
+        }
+
+        body{
+            background-image: url(img/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
+            background-size:cover;
+
+        }
+        main{
+            margin: 20% 0 0 0;
+            border: 5px solid rgb(70, 60, 2);
+            border-radius: 10px;
+            display: inline-block;
+            padding: 0 30px;
+            backdrop-filter: blur(8px);
+        }
+        h1{
+            color:#302403;
+            font-size: 70px;
+        }
+        h2{
+            font-size: 40px;
+            color:#fca000;
+        }
+
+        #button{
+            margin-top: 20px;
+            font-size: 70px;
+        }
+        button{
+            color: white;
+            padding:10px;
+            border: none;
+            font-size: 25px;
+            background-color: #302403;
+            border-radius: 20px;
+            transition: all 0.4s ease-out;
+        }
+
+        button:hover{
+            background-color: #574002;
+            transform: scale(1.05);
+        }
+
+        .nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-item{
+            text-decoration: none;
+            transition: all 0.3s ease-out;
+        }
+
+        .nav-item:hover{
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-flex-row">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="reservation.html">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item" id="spec">
+            <a href="speciality.html">Speciality</a>
+          </li>
+        </ul>
+      </nav>
+
+    <main>
+        <h1>Reserved</h1>
+        <h2>Your seat has been booked</h2>
+    </main>
+
+    <div id="button">
+    <a href="index.html"><button>HOME PAGE</button></a>
+    </div>
+</body>
+</html>

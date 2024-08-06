@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+        body{
+            background-image: url(img/brooke-lark-goOsYmVJBvk-unsplash.jpg);
+            background-size: contain;
+            
+        }
+
+        header{
+            text-align: center;
+            font-family: 'Big Shoulders Text', cursive;
+            font-size: 70px;
+        }
+
+        .menu{
+
+            width: 600px;
+            margin-left: 33%;
+            box-shadow: 10px;
+            
+        }
+
+
+        .nav-flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        }
+
+        .nav-flex-row li {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 20px 15px;
+        }
+
+        .nav-flex-row li a {
+        font-family: 'Big Shoulders Text', cursive;
+        color: black;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-decoration: none;
+        }
+
+        .nav-item{
+            text-decoration: none;
+            transition: all 0.3s ease-out;
+        }
+
+        .nav-item:hover{
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-flex-row">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="reservation.html">Reservation</a>
+          </li>
+          <li class="nav-item" id="spec">
+            <a href="speciality.html">Speciality</a>
+          </li>
+        </ul>
+      </nav>
+
+      <br><br><br><br><br><br><br>
+
+      <header>MENU</header>
+    
+    <img class="menu" src="img/breakfast2.jpg" alt="Breakfast">
+    <img class="menu" src="img/salads1.jpg" alt="Salads">
+    <img class="menu" id="appetizers" src="img/appetizers2.jpg" alt="Appetizers">
+    <img class="menu" src="img/mains2.jpg" alt="Mains">
+    <img class="menu" src="img/milkshakes2.jpg" alt="Milkshakes">
+
+    
+</body>
+</html>

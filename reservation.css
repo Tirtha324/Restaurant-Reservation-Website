@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    text-align: center;
+    font-family: 'Big Shoulders Text', cursive;
+
+}
+
+body{
+    background-image: url(img/reservphoto2.jpg);
+    background-size: cover;
+    
+}
+
+h1{
+    color:#302403;
+    text-align: center;
+    font-size: 70px;
+
+}
+
+
+
+h2{
+    /* color: #ff9900 ;     */
+    color: #d55500;
+    font-size: 40px;
+}
+
+input{
+    font-size:x-large;
+}
+
+#button{
+    color:#ffffff;
+    background-color:#c49209;
+    font-size: x-large;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    transition: all 0.4s ease-out;
+}
+
+/* div{
+    border: 10px solid aqua;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0px 0px 20px 0px;
+} */
+
+header{
+    border: 5x solid blue;
+    padding: 0px 100px 0px 100px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+}
+form{
+    border: 5px solid rgb(70, 60, 2);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0px 65px 20px 65px;
+    backdrop-filter: blur(15px);
+
+}
+
+select{
+    font-size:x-large;
+    size: 70px;
+}
+
+input{
+    width: 300px;
+}
+
+#button:hover{
+    background-color:#ffbb00;
+    transform: scale(1.05);
+
+}
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-item{
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+#output{
+    text-align: center;
+    font-size: 100px;
+}
+
+.output{
+    text-align: center;
+    font-size: 100px;
+}
